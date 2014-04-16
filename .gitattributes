@@ -1,4 +1,21 @@
-# All files treated as binary except *.cs and *.meta
-*		binary
-*.cs 	text eol=lf
-*.meta 	text eol=lf
+# Apply native OS line-endings on checkout of these files...
+*.cs                text diff=csharp
+*.gitignore         text
+*.gitmodules        text
+*.gitattributes     text
+
+# Apply Unix-style LF line-endings on checkout of these files...
+*.meta              text eol=lf
+*.asset             text eol=lf
+*.unity             text eol=lf
+*.prefab            text eol=lf
+
+# Apply Windows/DOS-style CR-LF line-endings on checkout of these files...
+*.sln               text eol=crlf
+*.csproj            text eol=crlf
+
+# Denote all files that are truly binary and should not be modified.
+*.jpeg              binary
+*.jpg               binary
+*.png               binary
+*.suo               binary
