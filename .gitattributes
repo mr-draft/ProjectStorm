@@ -1,2 +1,4 @@
-# Set default behaviour, in case users don't have core.autocrlf set.
-* text eol=lf
+# All files treated as binary except *.cs and *.meta
+*		binary
+*.cs 	text eol=lf
+*.meta 	text eol=lf
