@@ -6,3 +6,6 @@ Temp/
 *.unityproj
 *.sln
 *.userprefs
+desktop.ini
+.dropbox
+*.db
